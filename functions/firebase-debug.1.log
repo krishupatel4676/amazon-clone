@@ -1,0 +1,54 @@
+[debug] [2021-07-17T14:38:15.838Z] ----------------------------------------------------------------------
+[debug] [2021-07-17T14:38:15.840Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Jigar\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
+[debug] [2021-07-17T14:38:15.841Z] CLI Version:   9.16.0
+[debug] [2021-07-17T14:38:15.841Z] Platform:      win32
+[debug] [2021-07-17T14:38:15.841Z] Node Version:  v14.17.0
+[debug] [2021-07-17T14:38:15.842Z] Time:          Sat Jul 17 2021 10:38:15 GMT-0400 (Eastern Daylight Time)
+[debug] [2021-07-17T14:38:15.842Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-07-17T14:38:15.844Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-07-17T14:38:15.914Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-17T14:38:15.914Z] > authorizing via signed-in user (krishupatel4676@gmail.com)
+[debug] [2021-07-17T14:38:15.915Z] [iam] checking project clone-f9394 for permissions ["firebase.projects.get"]
+[debug] [2021-07-17T14:38:15.916Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-07-17T14:38:15.917Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-17T14:38:16.090Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Sat, 17 Jul 2021 14:38:16 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-17T14:38:16.101Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-f9394:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-07-17T14:38:16.108Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2021-07-17T14:38:16.108Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2021-07-17T14:38:16.286Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 17 Jul 2021 14:38:16 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=55","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-17T14:38:16.312Z] [functions] Using node@14 from host.
+[debug] [2021-07-17T14:38:16.312Z] defaultcredentials: writing to file C:\Users\Jigar\AppData\Roaming\firebase\krishupatel4676_gmail_com_application_default_credentials.json
+[debug] [2021-07-17T14:38:16.314Z] DEBUG: Setting GAC to C:\Users\Jigar\AppData\Roaming\firebase\krishupatel4676_gmail_com_application_default_credentials.json
+[debug] [2021-07-17T14:38:16.315Z] > refreshing access token with scopes: []
+[debug] [2021-07-17T14:38:16.315Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-17T14:38:16.445Z] <<< HTTP RESPONSE 200 {"date":"Sat, 17 Jul 2021 14:38:16 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-17T14:38:16.456Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-f9394/adminSdkConfig [none]
+[debug] [2021-07-17T14:38:16.769Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-f9394/adminSdkConfig 200
+[debug] [2021-07-17T14:38:16.769Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-f9394/adminSdkConfig {"projectId":"clone-f9394","storageBucket":"clone-f9394.appspot.com","locationId":"us-central"}
+[debug] [2021-07-17T14:38:16.782Z] [functions] Watching "C:\Users\Jigar\Desktop\amazon-clone\functions" for Cloud Functions...
+[debug] [2021-07-17T14:38:16.794Z] DEBUG: [worker-pool] addWorker(~diagnostic~)
+[debug] [2021-07-17T14:38:16.794Z] DEBUG: [worker-pool] Adding worker with key ~diagnostic~, total=1
+[debug] [2021-07-17T14:38:16.795Z] DEBUG: [worker-pool] submitWork(triggerId=)
+[debug] [2021-07-17T14:38:16.795Z] DEBUG: [worker-~diagnostic~-21a05f17-abd7-4c05-861e-a482e6e52975]: Assigning socketPath: \\?\pipe\C:\Users\Jigar\Desktop\amazon-clone\functions\15508
+[debug] [2021-07-17T14:38:16.796Z] DEBUG: [worker-~diagnostic~-21a05f17-abd7-4c05-861e-a482e6e52975]: BUSY
+[debug] [2021-07-17T14:38:16.977Z] DEBUG: [runtime-status] [15508] Functions runtime initialized. {"cwd":"C:\\Users\\Jigar\\Desktop\\amazon-clone\\functions","node_version":"14.17.0"}
+[debug] [2021-07-17T14:38:16.978Z] DEBUG: [runtime-status] [15508] Disabled runtime features: undefined
+[debug] [2021-07-17T14:38:16.981Z] DEBUG: [runtime-status] [15508] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.10.0","resolution":"C:\\Users\\Jigar\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-07-17T14:38:16.982Z] DEBUG: [runtime-status] [15508] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.14.1","resolution":"C:\\Users\\Jigar\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-07-17T14:38:16.983Z] DEBUG: [runtime-status] [15508] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.14.1","resolution":"C:\\Users\\Jigar\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-07-17T14:38:16.985Z] DEBUG: [runtime-status] [15508] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}]
+[debug] [2021-07-17T14:38:16.985Z] DEBUG: [runtime-status] [15508] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.14.1","resolution":"C:\\Users\\Jigar\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-07-17T14:38:17.038Z] DEBUG: [runtime-status] [15508] Checked functions.config() {"config":{}}
+[debug] [2021-07-17T14:38:17.038Z] DEBUG: [runtime-status] [15508] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.14.1","resolution":"C:\\Users\\Jigar\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}}
+[debug] [2021-07-17T14:38:17.039Z] DEBUG: [runtime-status] [15508] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.14.1","resolution":"C:\\Users\\Jigar\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-07-17T14:38:17.040Z] DEBUG: [runtime-status] [15508] Resolved module firebase-admin {"declared":true,"installed":true,"version":"9.10.0","resolution":"C:\\Users\\Jigar\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}
+[debug] [2021-07-17T14:38:17.040Z] DEBUG: [runtime-status] [15508] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.14.1","resolution":"C:\\Users\\Jigar\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-functions\\lib\\index.js"}
+[debug] [2021-07-17T14:38:17.040Z] DEBUG: [runtime-status] [15508] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"9.10.0","resolution":"C:\\Users\\Jigar\\Desktop\\amazon-clone\\functions\\node_modules\\firebase-admin\\lib\\index.js"}}
+[debug] [2021-07-17T14:38:17.258Z] [functions[us-central1-api]] http function initialized (http://localhost:5001/clone-f9394/us-central1/api).
+[info] i  functions: Loaded functions: api 
+[warn] !  functions: The following emulators are not running, calls to these services will affect production: firestore, database, pubsub, storage 
+[debug] [2021-07-17T14:38:17.277Z] DEBUG: [worker-~diagnostic~-21a05f17-abd7-4c05-861e-a482e6e52975]: IDLE
